@@ -1,6 +1,5 @@
-# Wild Rift Smart Overlay - React, Socket.IO, and Styled Components
-Wild Rift Smart Overlay created for TUP-M GEAR's GG:Wild Rift tournament
-
+# Arena-of-Valor-ban-pick-overlay
+Based on GGWR-Smart-Overlay 
 ## Instructions
 After you've cloned or downloaded the project, open a CMD then `cd <path/to/folder>`. Once inside the folder, run the command...
 ### `npm install`
@@ -18,6 +17,3 @@ In the the same or different browsers.
 
 Whatever you do in the "/Admin" page will reflect on the "/" page.
 
-Demo: https://youtu.be/LLb0xMhqcrQ
-
-Used In: https://youtu.be/-p5Am398Z-Q
