@@ -1,0 +1,225 @@
+:root {
+    --big-text-size: 100px;
+    --med-text-size: 50px;
+    --timer-text-size: 70px
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: gray;
+}
+
+.container {
+    width: 1920px;
+    height: 1080px;
+    background-color: var(--debug-color-green);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.bar {
+    display: relative;
+    height: 160px;
+    width: 100%;
+    background-color: white;
+}
+
+.bar .blue {
+    position: absolute;
+    left: -25px;
+    top: 0;
+    height: inherit;
+    width: 43%;
+    background-color: #0E97A7;
+    transform: skew(14deg);
+    text-indent: 75px;
+}
+
+.bar .blue .team-info {
+    transform: skew(-14deg);
+}
+
+.bar .red {
+    position: absolute;
+    right: -25px;
+    top: 0;
+    height: inherit;
+    width: 43%;
+    background-color: #C01F32;
+    direction: rtl;
+    transform: skew(-14deg);
+    text-indent: 75px;
+}
+
+.bar .red .team-info {
+    transform: skew(14deg);
+}
+
+.phase-info {
+    width: 100%;
+    text-align: center; 
+    height: inherit;
+    font: 500 25px 'Montserrat', sans-serif;
+    margin-top: -5px;
+}
+
+.bar .big-text {
+    font-size: 100px;
+}
+
+.bar .med-text {
+    font-size: 50px;
+}
+
+/* PICKS ---------------------- */
+.picks {
+    position: absolute;
+    top: 180px;
+    width: 500px;
+    height: 750px;
+    
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--debug-color-green);
+}
+
+.picks.red {
+    right: 0;
+}
+
+.picks .pick {
+    transition: 2s;
+    position: relative;
+    width: 100%;
+    border: 1px solid black;
+    flex-grow: 2;
+}
+
+.picks .pick .splash {
+    height: 100%;
+    width: 100%;
+    
+    transition: 
+      background-color 0.5s ease,
+      opacity 0.75s;
+      
+    border-width: 0px;
+    background-size: 100%;
+   /* background-image: none;*/
+    background-position: 20% 25%;
+}
+
+.picks .pick .blank {
+    height: 100%;
+    width: 100%;
+    
+    transition: 
+      background-color 0.5s ease,
+      opacity 0.75s;
+      
+    border-width: 0px;
+    background-size: 15%;
+    background-color: #141414;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.picks .pick .text-champ {
+    color: white;
+    font: italic 100 20px 'Montserrat', sans-serif;
+    position: absolute;
+    left: 10px;
+    bottom: 35px;
+}
+
+.picks.blue .pick .text-champ {
+    right: 10px;
+    text-align: right;
+}
+
+.picks .pick .text-ign {
+    color: white;
+    font: italic 900 30px 'Montserrat', sans-serif;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+}
+
+.picks.blue .pick .text-ign {
+    right: 10px;
+    text-align: right;
+}
+
+
+.picks .pick .active {
+    animation: pick-shadow 3s infinite;
+}
+
+@keyframes pick-shadow {
+    50% {box-shadow: inset 0px 0px 40px white;}
+}
+
+.bans {
+    overflow: hidden;
+    position: absolute;
+    top: 950px;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bans.red {
+    right: 0;
+    flex-direction: row-reverse;
+}
+
+.bans .ban {
+    transition: 2s;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    transform: skewX(14deg);
+    height: inherit;
+    border: 1px solid black;
+}
+
+.bans .ban .splash {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    height: 125%;
+    width: 150%;
+    margin-left: -25%;
+    transform: skewX(-14deg);
+}
+
+.bans .ban .blank {
+    background-color: #141414;
+    background-position: 50% 50% !important;
+    height: 100% !important;
+    width: 150%;
+}
+
+.bans .ban .active {
+    animation: ban-shadow 3s infinite;
+}
+
+@keyframes ban-shadow {
+  50% {box-shadow: inset 0px 0px 30px white;}
+}
+
+.bans.red .ban {
+    transform: skewX(-14deg);
+}
+
+.bans.red .ban .splash {
+    transform: skewX(14deg);
+}
