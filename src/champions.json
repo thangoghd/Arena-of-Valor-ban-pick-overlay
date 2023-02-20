@@ -16,6 +16,7 @@
        {"name": "AzzenKa", "role": "mage"},
        {"name": "Baldum", "role": "support"},
        {"name": "Batman", "role": "assassin"},
+       {"name": "Bonnie", "role": "mage"},
        {"name": "Bright", "role": "assassin"},
        {"name": "Butterfly", "role": "assassin fighter"},
        {"name": "Capheny", "role": "marksman"},
