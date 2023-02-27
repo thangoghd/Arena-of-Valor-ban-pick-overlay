@@ -25,7 +25,7 @@ import BanComponent from "./components/BanComponent";
 var order = ['blue', 'red', 'blue', 'red', 'blue', 'red', 'red', 'blue', 'blue', 'red', 'red', 'blue', 'red', 'blue', 'red', 'blue', 'blue', 'red']
 
 const TimerComponent = React.memo(({currentSlot, startTimer}) => {
-  const [seconds, setSeconds] = useState(25);
+  const [seconds, setSeconds] = useState(60);
 
   useEffect(() => {
     const timer = seconds > 0 && setInterval(() => {
@@ -36,7 +36,7 @@ const TimerComponent = React.memo(({currentSlot, startTimer}) => {
   }, [seconds])
 
   useEffect(() => {
-    setSeconds(25);
+    setSeconds(60);
   }, [currentSlot, startTimer])
 
   if ((currentSlot >= 0 && currentSlot <= 20) && startTimer) {
