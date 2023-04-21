@@ -22,7 +22,7 @@ export const TeamInfoContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    color: #D4AF37;
+    color: #FFFFFF;
 `;
 
 export const TeamInitials = styled.div`
@@ -64,13 +64,13 @@ export const GameInfo = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    background-color: #BBA151;
+    background-color: #FFFFFF;
 `;
 
 export const PhaseInfoText = styled.div``;
 
 export const Score = styled.div`
-    color: #D4AF37;
+    color: #FFFFFF;
     font-size: 100px;
     font-weight: 500;
     font: 500 100px 'Montserrat', sans-serif;
@@ -79,7 +79,7 @@ export const Score = styled.div`
 export const Blue = styled.div`
     width: 45%;
     height: inherit;
-    background: linear-gradient(90deg, rgba(9,12,13,1) 0%, rgba(18,23,26,1) 100%);
+    background: linear-gradient(90deg, rgba(23,0,96,1) 0%, rgba(2,118,219,1) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,7 +97,7 @@ export const Red = styled.div`
     width: 45%;
     height: inherit;
     direction: rtl;
-    background: linear-gradient(-90deg, rgba(9,12,13,1) 0%, rgba(18,23,26,1) 100%);
+    background: linear-gradient(-90deg, rgba(112,1,1,1) 0%, rgba(252,3,3,1) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
