@@ -29,8 +29,8 @@ const ChampionBanSplash = styled.div`
     `
         background-size: cover;
         background-position: 50% 0% !important;
-        height: 125%;
-        width: 130%;
+        height: 100%;
+        width: 100%;
     `}
 
     ${({ active }) => active === true &&
