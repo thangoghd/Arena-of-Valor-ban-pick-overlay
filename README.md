@@ -1,7 +1,7 @@
 # Arena-of-Valor-ban-pick-overlay
 Based on [GGWR-Smart-Overlay](https://github.com/JEBataclan/GGWR-Smart-Overlay) 
 
-##Installation
+## Installation
 Download and install Node.JS for Windows
 https://nodejs.org/en/download
 
