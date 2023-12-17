@@ -222,7 +222,7 @@ export const BlueBansContainer = styled.div`
     overflow: hidden;
     position: absolute;
     top: 980px;
-    left: 410px;
+    left: 412px;
     width: 280px;
     height: 70px;
     display: flex;
@@ -235,7 +235,7 @@ export const RedBansContainer = styled.div`
     overflow: hidden;
     position: absolute;
     top: 980px;
-    right: 410px;
+    right: 412px;
     width: 280px;
     height: 70px;
     display: flex;
