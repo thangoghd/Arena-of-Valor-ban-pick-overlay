@@ -61,6 +61,7 @@
        {"name": "Max", "role": "tank"},
        {"name": "Mganga", "role": "mage"},
        {"name": "Mina", "role": "tank support"},
+        {"name": "Ming", "role": "support"},
        {"name": "Moren", "role": "marksman"},
        {"name": "Murad", "role": "assassin"},
        {"name": "Nakroth", "role": "assassin"},
