@@ -21,6 +21,7 @@
        {"name": "Butterfly", "role": "assassin fighter"},
        {"name": "Capheny", "role": "marksman"},
        {"name": "Celica", "role": "marksman"},
+        {"name": "Charlotte", "role": "fighter"},
        {"name": "Chaugnar", "role": "tank support"},
        {"name": "Cresht", "role": "support tank"},
        {"name": "DArcy", "role": "mage"},
